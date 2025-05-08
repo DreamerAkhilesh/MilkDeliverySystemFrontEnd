@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 // Add backend base URL for accessing uploaded images
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = process.env.VITE_BACKEND_URL;
 
 const categoriesData = [
   { id: 1, name: "Milk", icon: "🥛" },

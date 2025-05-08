@@ -8,7 +8,7 @@ import axios from "axios";
 import { Home, User2, LogOut, Package, ShoppingCart, CreditCard, Settings, HelpCircle, Wallet, Pause, X } from "lucide-react";
 
 // Define backend URL
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = process.env.VITE_BACKEND_URL;
 
 const Profile = () => {
   const [user, setUser] = useState(null);

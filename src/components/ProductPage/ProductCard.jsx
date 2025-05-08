@@ -6,7 +6,7 @@ import { toast } from "sonner";
 import axios from "axios";
 
 // Define backend URL
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = process.env.VITE_BACKEND_URL;
 // Fix default image path - point to an image that definitely exists
 const defaultImage = "https://placehold.co/200x200?text=No+Image";
 
